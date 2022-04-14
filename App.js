@@ -7,10 +7,7 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  Text,
-} from 'react-native';
+import { SafeAreaView, } from 'react-native';
 import StopWatch from './src/screens/Stopwatch';
 
 const App = () => (
