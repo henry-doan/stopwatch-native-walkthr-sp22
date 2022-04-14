@@ -15,11 +15,10 @@ const StopWatch = () => {
   }, [])
 
   const start = () => {
-    resetTimer();
     setStarted(true);
     this.timer = setInterval( () => {
       setTime(msToTime(new Date().getTime() - startTime))
-    });
+    }, 1);
   }
   
   const stop = () => {
@@ -47,6 +46,7 @@ const StopWatch = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>My Stopwatch</Text>
       <Text style={styles.counter}>
         { time }
       </Text>
@@ -80,6 +80,11 @@ const styles = StyleSheet.create({
   counter: {
     fontSize: 40,
     fontFamily: "Menlo-Regular",
+  },
+  title: {
+    fontSize: 20,
+    fontFamily: "Menlo-Regular",
+    marginBottom: 30,
   },
 })
 

@@ -15,7 +15,6 @@ import StopWatch from './src/screens/Stopwatch';
 
 const App = () => (
   <SafeAreaView>
-    <Text>My Stopwatch</Text>
     <StopWatch />
   </SafeAreaView>
 );
